@@ -18,7 +18,7 @@ public class WordCount {
         //create new stream Properties - 5 properties
         Properties configProperties = new Properties();
         configProperties.put(StreamsConfig.APPLICATION_ID_CONFIG,"word-count-app");
-        configProperties.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG,"127.0.0.1:9091");
+        configProperties.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG,"127.0.0.1:9092");
         configProperties.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG,"earliest");
         configProperties.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, Serdes.String().getClass());
         configProperties.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG,Serdes.String().getClass());
